@@ -4,7 +4,9 @@ import Quote from './Quote.js';
 
 class App extends React.Component{
 
-
+componentDidMount(){
+  
+}
 
 render(){
   return(
