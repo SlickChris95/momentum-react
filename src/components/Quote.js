@@ -32,7 +32,7 @@ class Quote extends React.Component{
 
   }
   handleClick = ()=>{
-    window.open("https://twitter.com/intent/tweet?text=" + this.state.quote+ " -" + this.state.author);
+    window.open("https://twitter.com/intent/tweet?text=" + this.state.quote);
   }
 
   render(){
