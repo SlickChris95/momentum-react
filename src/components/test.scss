@@ -1,16 +1,25 @@
+* {
+  margin: 0;
+}
+
 body {
   color: white;
 }
 #root {
-  border: 1px solid black;
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
 }
 
 #app-center-container{
+  border: 1px solid red;
   margin-top: 40px;
   display: flex;
-  width: 800px;
+  width: 1200px;
   align-items: center;
-  flex-direction: column
+  flex-direction: column;
+  justify-content: center;
+
 }
 
 #clock-container {
@@ -20,9 +29,10 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 10px;
+  margin: 10px;
+  margin-top: 100px;
   #clock-display {
-    font-size: 3.5em;
+    font-size: 5em;
   }
 }
 #quote-container{
@@ -32,8 +42,19 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  #quote-button-container {
+    margin-top: 10px;
+  }
 }
 
-#quote-button-container {
+
+#weather-container {
+  border: 1px solid black;
+  position: absolute;
   margin-top: 10px;
+  right: 20px;
+  #weather-display {
+    color: white;
+    font-size: 22px;
+  }
 }
