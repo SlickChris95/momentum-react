@@ -53,7 +53,7 @@ class Time extends React.Component {
     return (
       <div className="top-row" id="clock-container">
         <div id="clock-display">{this.state.date.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</div>
-        <h1>{this.state.greeting}, Chris.</h1>
+        <h1 id="greeting-display">{this.state.greeting}, Chris.</h1>
       </div>
     );
   }

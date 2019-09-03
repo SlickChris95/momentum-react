@@ -10,6 +10,28 @@ body {
   display: flex;
   justify-content: center;
 }
+#main-focus {
+  border: 1px solid red;
+  text-align: center;
+  padding: 2px;
+}
+
+#delete-focus{
+  position: absolute;
+  border: 1px solid black;
+  opacity: 0;
+  // width: 50px;
+  margin: 0 60px;
+  color: tomato;
+  transition: 0.2s linear;
+  padding: 0 5px;
+  // width: 60px;
+
+
+}
+h1:hover #delete-focus {
+  opacity: 1.0;
+}
 
 #app-center-container{
   border: 1px solid red;
@@ -23,16 +45,21 @@ body {
 }
 
 #clock-container {
-  border: 1px solid black;
+  border: 1px solid red;
   width: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 10px;
-  margin-top: 100px;
+  margin-top: 130px;
   #clock-display {
-    font-size: 5em;
+    font-size: 6em;
+    margin-bottom: 15px;
+  }
+  #greeting-display {
+    font-size: 2.5em;
+    // color: blue;
   }
 }
 #quote-container{
@@ -42,11 +69,33 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  #quote-text {
+    font-size: 1.2em;
+  }
   #quote-button-container {
     margin-top: 10px;
   }
 }
+.prompt {
+  margin-bottom: 20px;
+  h3 {
+    font-size: 1.4em;
+  }
+  input {
+    background-color: transparent;
+    font-size: 1.3em;
+    width: 300px;
+    border: 1px solid transparent;
+    border-bottom: 2px solid white;
+    color: white;
+    text-align: center;
+    &:focus{
+      // border:2px solid red;
+      outline: none;
 
+    }
+  }
+}
 
 #weather-container {
   border: 1px solid black;

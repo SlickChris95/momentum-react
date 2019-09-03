@@ -39,7 +39,7 @@ class Quote extends React.Component{
     return(
       <div id="quote-container">
         <div id="quote-container">
-          <div>{this.state.quote}</div>
+          <div id="quote-text">{this.state.quote}</div>
         </div>
         <div id="quote-button-container">
           <button className="ui red button" onClick={()=> this.setState({quote: randomQuote(quotes) })}>
