@@ -1,8 +1,8 @@
 import React from 'react';
 
 const List = props => (
-  <ul>
-    {props.focus}
+  <ul className="focus-list">
+    <p>{props.focus}</p>
   </ul>
 );
 
